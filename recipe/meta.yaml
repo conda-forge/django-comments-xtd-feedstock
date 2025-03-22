@@ -1,5 +1,5 @@
 {% set name = "django-comments-xtd" %}
-{% set version = "2.10.4" %}
+{% set version = "2.10.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_comments_xtd-{{ version }}.tar.gz
-  sha256: 8c96d2a8bb8ecc7b3b85b1ada343f2e126c070f3a4c9a90f0fca8d233c63a1d4
+  sha256: efe759ff42c17bf7a3a73c885af863ff1d1e506de35129a61fbe94dc458bda5d
 
 build:
   noarch: python

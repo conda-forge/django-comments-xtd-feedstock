@@ -4,7 +4,6 @@ schema_version: 1
 context:
   name: django-comments-xtd
   version: "2.10.9"
-  python_min: 3.10
 
 package:
   name: ${{ name|lower }}
@@ -21,7 +20,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - setuptools
     - pip
   run:
@@ -38,7 +37,6 @@ tests:
       imports:
         - django_comments_xtd
       pip_check: true
-
       python_version: ${{ python_min }}.*
 
 about:

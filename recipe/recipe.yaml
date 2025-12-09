@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-comments-xtd
-  version: "2.10.10"
+  version: "2.10.11"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_comments_xtd-${{ version }}.tar.gz
-  sha256: e2f48c22f930d898b1ad7c2f8f0932b5912edf268696b5c8d462b27ab0006a85
+  sha256: 4a37cb28adae793ea3d98bbccff49544a8a430da0ab0826c29bbe99cb579601c
 
 build:
   number: 0

@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: django-comments-xtd
-  version: "2.10.11"
+  version: 2.10.12
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_comments_xtd-${{ version }}.tar.gz
-  sha256: 4a37cb28adae793ea3d98bbccff49544a8a430da0ab0826c29bbe99cb579601c
+  sha256: 56f736a291e76a13c935202d1d6ea8ad9bf530707075ed128888d47499565a77
 
 build:
   number: 0
@@ -25,13 +25,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<4.0
-    - django >=4,<6
+    - django >=4.0,<7
     - django-contrib-comments >=2.2,<2.3
-    - djangorestframework >=3.12,<3.16
-    - docutils
-    - pytz
+    - djangorestframework >=3.12,<3.18
     - six
-
 tests:
   - python:
       imports:

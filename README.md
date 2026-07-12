@@ -3,11 +3,19 @@ About django-comments-xtd-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-comments-xtd-feedstock/blob/main/LICENSE.txt)
 
-Home: http://pypi.python.org/pypi/django-comments-xtd
+Home: https://github.com/danirus/django-comments-xtd
 
 Package license: BSD-2-Clause
 
 Summary: Django Comments Framework extension app with thread support, follow up notifications and email confirmations.
+
+Development: https://github.com/danirus/django-comments-xtd
+
+Documentation: https://django-comments-xtd.readthedocs.io/
+
+A Django Comments Framework extension app with thread support, follow-up
+notifications, mail confirmation before posting, like/dislike flags,
+moderation, comment-removal requests and a REST API.
 
 Current build status
 ====================

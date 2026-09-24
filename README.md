@@ -48,31 +48,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `django-comments-xtd` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install django-comments-xtd
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install django-comments-xtd
 ```
 
-It is possible to list all of the versions of `django-comments-xtd` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add django-comments-xtd
+# for installing globally
+pixi global install django-comments-xtd
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `django-comments-xtd` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search django-comments-xtd --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search django-comments-xtd --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search django-comments-xtd --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -84,6 +126,8 @@ mamba repoquery whoneeds django-comments-xtd --channel conda-forge
 # List dependencies of `django-comments-xtd`:
 mamba repoquery depends django-comments-xtd --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
